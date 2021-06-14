@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet"
   </head>
   <body>
 
@@ -17,7 +19,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon justify-content-md-start"></span>
         </button>
-        <div class="feature-icon bg-primary bg-gradient">
+        <div class="feature-icon" style="color:#ffffff; font-size: 1.5rem;">
           <i class="bi bi-file-earmark-code-fill"></i>
         </div>
         <div class="collapse navbar-collapse justify-content-md-end" id="navbarSupportedContent">
@@ -36,13 +38,15 @@
       <div class="home__background">
 
       </div>
-      <figure style="height: 200px; width: 200px;">
-        <img src="https://github.com/JACKZON-DEVELOPER/JACKZON-DEVELOPER-.github.io/blob/master/Picture/img/perfil.jpg" alt="web" style="width:100%;">
-      </figure>
-      <div class="">
-        <span class="" data-sr-id="3" style="visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.35s;">Hola Guerreros</span>
-        <h1 class="" data-sr-id="4" style="visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.45s;">asson Caamal Medina</h1>
-        <span class="" data-sr-id="5" style="visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.55s;">Desarrollador web y movil</span>
+      <div class="row justify-content-center home-detail">
+
+        <figure style="height: 14rem; width: 14rem;" class="col-12 col-md-auto">
+          <img src="picture/img/perfil.jpg" alt="web" style="width:100%; border-radius: 50%">
+        </figure>
+        <div class="detail-home col-12 col-md-auto">
+          <h1 class=""  style="font-size: 4rem"> Jasson Caamal Medina</h1>
+          <p class=""  style="font-size:1.5rem;">Desarrollador web y movil</p>
+        </div>
       </div>
     </section>
 
@@ -51,24 +55,26 @@
       <div class=" col-xxl-8 px-4 py-5" id="acerca">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
-            <img src="https://getbootstrap.com/docs/5.0/examples/heroes/bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            <img src="picture/img/bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
           </div>
           <div class="col-lg-6">
             <h2 class="display-5 fw-bold lh-1 mb-3">Acerca de mi</h2>
             <p class="lead">Soy desarrollador con mucha pasión por el código, tengo conocimientos en el desarrollo de aplicaciones web, aplicaciones móviles y aplicaciones de escritorio, soy responsable, me gusta los retos y soy autodidacta. </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 bi bi-file-earmark-arrow-down-fill"> <a href="https://www.canva.com/design/DAEgEuqkv_0/43GLUEFlzwSAeDVw7lsM-A/view?utm_content=DAEgEuqkv_0&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton" class="devicon-github-original colored hero-icon">   curriculum vitae</a></button>
-              
-             
-                <figure class="hero-imageContainer">
-                <a href="https://github.com/JACKZON-DEVELOPER" class="devicon-github-original colored hero-icon"></a>
+              <a href="cv/jasson adrian caamal medina.pdf">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 bi bi-file-earmark-arrow-down-fill">  Curriculum vitae</button>
+              </a>
+              <div class="row">
 
-              </figure>
-              <figure class="hero-imageContainer">
-                <a href="https://www.linkedin.com/in/jasson-caamal-medina" class="devicon-linkedin-plain colored hero-icon"></a>
+                <figure class="hero-imageContainer col-6">
+                  <a href="https://github.com/JACKZON-DEVELOPER" class="devicon-github-original colored hero-icon"></a>
 
-              </figure>
+                </figure>
+                <figure class="hero-imageContainer col-6">
+                  <a href="https://www.linkedin.com/in/jasson-caamal-medina" class="devicon-linkedin-plain colored hero-icon"></a>
+
+                </figure>
+              </div>
             </div>
           </div>
         </div>
@@ -77,27 +83,35 @@
         <section id="habilidades" class="py-5">
           <h2 class="fw-bold py-5 " style="margin-bottom:2rem;">Habilidades</h2>
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-lg-4 habilidades-card">
               <figure class="tec-imageContainer">
-                <img src="https://github.com/JACKZON-DEVELOPER/JACKZON-DEVELOPER-.github.io/blob/master/Picture/svg/web.svg" alt="web" class="tec-image" >
+                <img src="picture/svg/web.svg" alt="web" class="tec-image" >
               </figure>
-              <h4>programacion web</h4>
-              <p>Desarrollo aplicaciones web tanto backend como frontend con php, asp.nat, boostrap, html, csss, javaScript, entre otras haramientas de desarollo web </p>
+
+              <h4>Programación Web  </h4>
+              <p>
+                Desarrollo aplicaciones web tanto Backend como Frontend con PHP, ASP.NET, Bootstrap, Html, Css, JavaScript, entre otras herramientas de desarrollo web.
+
+              </p>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 habilidades-card">
               <figure  class="tec-imageContainer">
-                <img src="https://github.com/JACKZON-DEVELOPER/JACKZON-DEVELOPER-.github.io/blob/master/Picture/svg/mobile.svg" alt="mobil" class="tec-image">
+                <img src="picture/svg/mobile.svg" alt="mobil" class="tec-image">
               </figure>
-              <h4>Aplicaciones Mobiles</h4>
-              <p>Desarrollo aplicaciones mobiles con los lenguajes Java y kotlin utilizando Android Studio y firebase. Tengo un conocimento de la arquitetura andoid </p>
+              <h4>Aplicación Móvil </h4>
+              <p>
+                Desarrollo aplicaciones móviles con los lenguajes Java y kotlin utilizando Android Studio y Firebase. Tengo un conocimiento de la arquitectura Android.
+              </p>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 habilidades-card">
               <figure class="tec-imageContainer">
-                <img src="https://github.com/JACKZON-DEVELOPER/JACKZON-DEVELOPER-.github.io/blob/master/Picture/svg/computer.svg" alt="computer" class="tec-image">
+                <img src="picture/svg/computer.svg" alt="computer" class="tec-image">
               </figure>
-              <h4>software de escritorio</h4>
-               <p>Desarrolo aplicaciones de escritorio utilizando java y C# con conocimiento de programacion orientada a objetos y manejo de base datos </p>
-            </div>
+              <h4>Software de Escritorio </h4>
+              <p>
+                Desarrollo aplicaciones de escritorio utilizando Java y C# con conocimiento de programación orientada a objetos y manejo de base datos.
+              </p>
+              </div>
 
           </div>
 
@@ -107,7 +121,7 @@
       <section id="portafolio" class=" portafolio row py-5">
         <h3 class="fw-bold py-5 ">Portafolio</h3>
         <div class="col-lg-4">
-          <article class="card proyect text-center" style="   background-image: url(https://raw.githubusercontent.com/JACKZON-DEVELOPER/JACKZON-DEVELOPER-.github.io/master/Picture/img/CAID.jpg);">
+          <article class="card proyect text-center" style="   background-image: url(picture/img/caid.jpg);">
             <figure class="proyect-imageContainer bg-light bg-gradient">
               <!-- <img class="proyect-image" src="picture/svg/phone_android_black_24dp.svg" alt="" > -->
                <i class="devicon-android-plain"></i>
@@ -116,8 +130,15 @@
             </figure>
             <div class="card-body proyect-deteil">
 
-              <h4 class="card-title proyect-title">Aplicacion CAID</h4>
-              <p class="card-text proyect-description">Aplicacion mobile para dispositivos android, esta app tiene como finalidad que los alumnos y profesores puedan tomar clases en linia. cuenta con video chat, mensageria y seccion de tareas</p>
+              <h4 class="card-title proyect-title">Aplicación CAID</h4>
+              <p class="card-text proyect-description">
+                Aplicación móvil para dispositivos Android, esta app tiene como finalidad que los
+                 alumnos y profesores puedan tomar clases en línea. cuenta con video chat con pizarra virtual,
+                  mensajería, apuntes, registro, administración de clase, sección de tareas y promedios por alumno.
+                  Ver más detalles en el repositorio
+
+
+              </p>
 
               <div class="proyect-enlace" >
                 <a href="#" class="proyect-repo btn btn-light devicon-github-original colored" ></a>
@@ -133,7 +154,7 @@
           </article>
         </div>
         <div class="col-lg-4">
-          <article class="card proyect text-center" style="    background-image: url(https://raw.githubusercontent.com/JACKZON-DEVELOPER/JACKZON-DEVELOPER-.github.io/master/Picture/img/CAID.jpg);">
+          <article class="card proyect text-center" style="    background-image: url(picture/img/kuyo_web.png);">
             <figure class="proyect-imageContainer bg-light bg-gradient">
               <!-- <img class="proyect-image" src="picture/svg/phone_android_black_24dp.svg" alt="" > -->
                <i class="devicon-android-plain"></i>
@@ -142,8 +163,12 @@
             </figure>
             <div class="card-body proyect-deteil">
 
-              <h4 class="card-title proyect-title">Aplicacion CAID</h4>
-              <p class="card-text proyect-description">La saga de super relata la historia donde goku y sus amigos conocen al dios de la destruccion adentransolos al mundo de los dioses donde goku se volvera mas poderoso que los dioses</p>
+              <h4 class="card-title proyect-title">Aplicación Web-turist </h4>
+              <p class="card-text proyect-description">
+                Este proyecto consiste en la administración de una página web en el que los usuarios puedan
+                buscar actividades turísticas en la zona. la aplicación puede registrar a los negocios para que puedan
+                publicitarse, tiene un menú de búsqueda, administración de permisos, sistema de contacto, galería, etc.
+                Ver más detalles en el repositorio	</p>
 
               <div class="proyect-enlace" >
                 <a href="#" class="proyect-repo btn btn-light devicon-github-original colored"></a>
@@ -161,7 +186,7 @@
           </article>
         </div>
         <div class="col-lg-4">
-          <article class="card proyect text-center" style=" background-image: url(https://github.com/JACKZON-DEVELOPER/JACKZON-DEVELOPER-.github.io/blob/57c321ef7f9cdfcaf57c5859e1128691c22c0ba0/Picture/img/CAID.jpg);">
+          <article class="card proyect text-center" style=" background-image: url(picture/img/web_nomina.png);">
             <figure class="proyect-imageContainer bg-light bg-gradient">
               <!-- <img class="proyect-image" src="picture/svg/phone_android_black_24dp.svg" alt="" > -->
                <i class="devicon-android-plain"></i>
@@ -170,9 +195,12 @@
             </figure>
             <div class="card-body proyect-deteil">
 
-              <h4 class="card-title proyect-title">Aplicacion CAID</h4>
-              <p class="card-text proyect-description">La saga de super relata la historia donde goku y sus amigos conocen al dios de la destruccion adentransolos al mundo de los dioses donde goku se volvera mas poderoso que los dioses</p>
-
+              <h4 class="card-title proyect-title">Aplicación Nomina </h4>
+              <p class="card-text proyect-description">
+                Proyecto web que realiza la administración de la nómina, esta aplicación sirve para tener
+                control de los pagos de nómina quincenal, se puede registrar empleados, modificar su tabulador
+                 de sueldo y se puede realizar búsquedas por número de empleado o departamento. Ver más detalles en el repositorio
+              </p>
               <div class="proyect-enlace" >
                 <a href="#" class="proyect-repo btn btn-light devicon-github-original colored" ></a>
               </div>
@@ -195,30 +223,30 @@
 
 
       <section id="contact" class="contacto py-5" style="">
-        <h2 class="fw-bold py-5 ">Contactame</h2>
+        <h2 class="fw-bold py-5 ">Contáctame</h2>
         <div class="row">
-          <div class="col" >
+          <div class="col-lg-4 contact-contact" >
 
-              <figure class="hero-imageContainer">
-                <a href="https://github.com/JACKZON-DEVELOPER" class="bi bi-envelope hero-icon" style=" color:red;"></a>
+              <figure class="contact-imageContainer ">
+                <a href="https://github.com/JACKZON-DEVELOPER" class="bi bi-envelope hero-icon " style=" color:red;"></a>
               </figure>
 
             <p>jasson.adrian.caamal.medina@gmial.com</p>
 
           </div>
-          <div class="col">
+          <div class="col-6 col-lg-4 contact-contact">
 
-              <figure class="hero-imageContainer">
+              <figure class="contact-imageContainer">
                 <a href="https://www.linkedin.com/in/jasson-caamal-medina" class="devicon-linkedin-plain colored hero-icon"></a>
               </figure>
-              <p>www.linkedin.com/in/jasson-caamal-medina</p>
+              <p>jasson-caamal-medina</p>
           </div>
-          <div class="col">
+          <div class="col-6 col-lg-4 contact-contact">
 
-              <figure class="hero-imageContainer">
-                <a href="https://github.com/JACKZON-DEVELOPER" class="devicon-github-original colored hero-icon"></a>
+              <figure class="contact-imageContainer ">
+                <a href="https://github.com/JACKZON-DEVELOPER" class="devicon-github-original colored hero-icon "></a>
               </figure>
-              <p>github.com/JACKZON-DEVELOPER</p>
+              <p>JACKZON-DEVELOPER</p>
 
           </div>
         </div>
@@ -228,9 +256,11 @@
 
       </div>
 
+<footer>
 
-
-<script src="assets/dist/js/bootstrap.bundle.min.js" ></script>
+</footer>
+<!--
+<script src="assets/dist/js/bootstrap.bundle.min.js" ></script> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
 
