@@ -121,7 +121,7 @@ justify-items: center;
   background-color: linear-gradient(#92bCa6, #A2CCB6);
 
   background-size: contain;
-  background-position: center;
+  background-position: top;
   padding: 0;
   margin-bottom: 2rem;
 
@@ -142,7 +142,7 @@ justify-items: center;
   width: 4rem;
   height: 4rem;
   margin-top: 3rem;
-  font-size: 3rem;
+ 
   color: #000000;
 border-radius: 50%;
 align-self: center;
@@ -151,6 +151,10 @@ position: inherit;
 
 
 }
+.icon-portafolio{
+  font-size: 3rem;
+}
+
 .proyect-image{
   max-width: 100%;
   object-fit: cover;
